@@ -9,6 +9,8 @@ import asyncio
 def check(name):
     if name in users:
         return "Your name is taken!"
+    elif name == "":
+        return "Write a name"
 
 
 def check_message(message):
