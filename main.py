@@ -26,7 +26,7 @@ async def main():
     put_markdown("## Bobogram 2.0")
 
     box = output()
-    put_scrollable(box, height=300)
+    put_scrollable(box, height=300, keep_bottom=True)
 
     username = await input("Your Name", required=True, validate=check)
     users.add(username)
